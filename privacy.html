@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DoseLift Privacy Policy</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1c1c1e}h1{font-size:2rem}h2{margin-top:2rem;font-size:1.25rem}a{color:#D9431F}.small{color:#6b6b70;font-size:.9rem}</style></head><body>
+<title>DoseLift Privacy Policy</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;max-width:720px;margin:0 auto;padding:24px 20px 64px;line-height:1.6;color:#1c1c1e}
+h1{font-size:28px;margin-bottom:4px}h2{font-size:19px;margin-top:32px}.meta{color:#6b6b70;font-size:14px}a{color:#e8501f}</style></head><body>
 <h1>DoseLift Privacy Policy</h1>
-<p class="small">Effective date: November 17, 2026</p>
-<p>DoseLift ("DoseLift", "we", "us") is an iPhone app for people on GLP-1 medications who lift weights. It is published by Kyle Martin Roth. This policy explains what information the app uses, where it goes, and the choices you have. We do not sell your data, we do not show ads, and we do not track you across other companies' apps or websites.</p>
+<p class="meta">Last updated: November 23, 2026</p>
+<p>DoseLift: GLP-1 Health Tracker ("DoseLift", "the app") is published by Kyle Roth. This policy explains what the app stores, what leaves your device, and your choices. We do not sell your data, we show no ads, and we do not track you across other companies' apps or websites.</p>
 
-<h2>1. Information the app uses</h2>
-<p><strong>Information you enter.</strong> Your name or nickname, sex, birthday, height, current and goal weight, the medication you take, your dose and dose day, doses you log, weigh-ins, activity level, eating preferences and foods to avoid, workouts, exercises, sets, weights and reps, and the foods you log. <strong>This information is stored on your device only. We do not send your name, medication, dose, weight, goals, workouts or Health data to our servers.</strong></p>
-<p><strong>Apple Health data (only if you allow it).</strong> If you connect Apple Health, DoseLift can read items such as date of birth, sex, height, weight and body composition, steps and activity, workouts, heart rate, sleep and nutrition, and can write nutrition, weight and workouts back to Health. You choose each data type in the iOS permission sheet and can change it any time in Settings &gt; Health. Health data is read and written on your device only. It is not sent to our servers, not used for advertising, and not sold.</p>
-<p><strong>Photos, labels and barcodes.</strong> If you use food photo logging, the photo is resized, stripped of metadata such as location, and sent to our server so it can be analyzed (see section 3). We do not save the photo, and the app does not save it to your photo library. Nutrition labels are read on your device using Apple's text recognition, and the label image is not uploaded. If you scan a barcode, the barcode number is looked up in food databases.</p>
-<p><strong>Purchases.</strong> Subscriptions are handled by Apple. We never see your card or payment details. We receive confirmation of whether you have an active subscription.</p>
-<p><strong>Anonymous identifier and usage counts.</strong> The app creates an anonymous account with no name, email or device identifier, stored in your device's Keychain. Our server uses it to count, per day, how many photo analyses, meal plans and food searches you make, so we can limit abuse and control costs. Because the Keychain can survive deleting the app, reinstalling may reuse the same anonymous ID.</p>
+<h2>Data that stays on your device</h2>
+<p>Your profile, medication and dose log, weigh-ins, workouts, food log, goals and settings are stored on your device. We do not have a copy of them on our servers.</p>
 
-<h2>2. Where your information is stored</h2>
-<p>Your profile, doses, weights, workouts and food log are stored on your device. If you delete the app, that locally stored data is deleted with it. The only things stored on our servers are the anonymous account, the usage counts, and a shared cache of food search results, described in section 3.</p>
+<h2>Apple Health (optional)</h2>
+<p>If you allow it, DoseLift reads steps, active energy, weight and workouts from Apple Health, and writes your weigh-ins and the calories, protein, carbs, fat and fiber you log. You choose what to share and can change this at any time in Settings &gt; Health. Health data is not sent to our servers or used for advertising.</p>
 
-<h2>3. Features that send data to our servers and service providers</h2>
+<h2>Features that use our servers</h2>
+<p>These features send limited information off your device to work:</p>
 <ul>
-<li><strong>Food photo analysis.</strong> The photo is sent over an encrypted connection to our backend (hosted on Supabase), which holds it in memory only while the request runs and passes it to Anthropic, our AI provider, to estimate nutrition. Only the nutrition numbers come back. We do not store the photo. Anthropic handles the photo under its own terms and privacy policy.</li>
-<li><strong>AI meal ideas.</strong> To suggest meals, the app sends the calories and macros you have left today, the meal type, minutes until your workout, your diet style and meals per day, your vegetarian or dairy-free settings, and the foods you asked to avoid. We do not send your name, weight, medication or user ID. This is processed by Anthropic.</li>
-<li><strong>Food search and barcode lookup.</strong> The text you search for or the barcode you scan is sent through our server to food databases: USDA FoodData Central, FatSecret Platform and Open Food Facts. Those services see our server's address, not yours. We keep a shared cache of search text, barcodes and the results returned. The cache is not tied to you or your anonymous ID. Open Food Facts data is available under the Open Database License.</li>
-<li><strong>Hosting.</strong> Supabase hosts our server functions and database. Supabase can see your IP address when your device connects, and keeps its own platform logs.</li>
+<li><strong>Food search and barcode scan.</strong> The text you search for or the barcode number is sent to our backend, which looks it up in public food databases (USDA FoodData Central, FatSecret and Open Food Facts).</li>
+<li><strong>AI meal photo and AI meal ideas (optional).</strong> Only if you say yes on the consent screen, the meal photo, or your daily calorie and protein targets and food preferences, are sent to our backend and on to a third-party AI provider to produce the estimate or suggestions. You can turn these off at any time in Settings. We do not use this data to train AI models or for advertising.</li>
 </ul>
-<p>We do not sell your data and we do not share it for advertising. We share it only with the providers above to run these features, if required by law, or to protect the rights and safety of users and the app. DoseLift contains no analytics, advertising or crash-reporting tools from third parties.</p>
+<p>Requests are tied to a random anonymous ID created by the app, not to your name or email. We keep basic usage records (the anonymous ID and request counts) for up to 90 days to prevent abuse and enforce limits. Your anonymous ID is shown in Settings.</p>
 
-<h2>4. Notifications</h2>
-<p>Dose reminders and other alerts are scheduled on your device. You can turn them off in iOS Settings.</p>
+<h2>Subscriptions</h2>
+<p>Purchases are handled by Apple. We use RevenueCat to manage subscriptions. RevenueCat receives a random anonymous app user ID, your purchase and subscription status, basic device and app information, and paywall events such as which paywall screen was shown. It does not receive your name, email, weight, dose, workout or food data. Apple processes your payment; we never see your card details.</p>
 
-<h2>5. Retention and deletion</h2>
-<p>Data on your device stays until you delete it in the app or delete the app. On our servers, daily usage counts are deleted after 90 days, and anonymous accounts are kept until you ask us to delete them. Cached food search results are deleted automatically within 24 hours to 30 days depending on the source. Our AI provider's retention is governed by its own policy. To ask us to delete the server-side data tied to your anonymous account, email us at the address below with the anonymous ID shown in Settings (once the app shows it). We will delete it within 30 days. Apple Health data is controlled by you in the Health app.</p>
+<h2>Camera and notifications</h2>
+<p>The camera is used only to photograph meals, read nutrition labels and scan barcodes. Label reading happens on your device. Notifications (dose and weigh-in reminders and a few first-week tips) are scheduled locally on your device.</p>
 
-<h2>6. Your choices and rights</h2>
-<p>You can use most of the app without connecting Apple Health, and you can change permissions for Health, notifications, the camera and photos at any time in iOS Settings. Depending on where you live (for example California or the EU/UK), you may have rights to access, correct, delete or export your information. Because almost all of your data stays on your device, you can view and delete it in the app. Contact us for anything else and we will respond within a reasonable time.</p>
+<h2>Data retention and deletion</h2>
+<p>Deleting the app removes the data stored on your device. To ask us to delete server-side usage records tied to your anonymous ID, contact us with that ID.</p>
 
-<h2>7. Security</h2>
-<p>We use reasonable measures to protect information, including encrypted connections to our servers. No method of storage or transmission is completely secure.</p>
+<h2>Children</h2>
+<p>DoseLift is intended for adults 18 and over. We do not knowingly collect data from children.</p>
 
-<h2>8. Health information notice</h2>
-<p>DoseLift is a tracking and planning tool. It is not a medical device and does not provide medical advice. See our <a href="terms.html">Terms of Use</a>.</p>
+<h2>Not medical advice</h2>
+<p>DoseLift is a tracking tool. It does not provide medical advice or recommend or calculate doses. Talk to your prescriber about your medication.</p>
 
-<h2>9. Children</h2>
-<p>DoseLift is intended for adults 18 and over. We do not knowingly collect information from anyone under 18. If you believe a child has used the app, contact us and we will delete the data.</p>
-
-<h2>10. Changes</h2>
-<p>We may update this policy. The effective date above shows the latest version. If changes are significant, we will tell you in the app.</p>
-
-<h2>11. Contact</h2>
-<p>Kyle Martin Roth<br>Email: <a href="mailto:lincolndog1215@gmail.com">lincolndog1215@gmail.com</a></p>
+<h2>Changes and contact</h2>
+<p>If we change this policy we will update the date above. Questions or requests: <a href="mailto:doselift@gmail.com">doselift@gmail.com</a>.</p>
 </body></html>
